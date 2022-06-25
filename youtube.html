@@ -1,0 +1,529 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid navbar-expand-md">
+      <div class="col-12 d-flex">
+        <div class="p-1" s>
+          <button type="button" class="btn btn-light py-2" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+            <i class="fa-solid fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="p-1 px-2">
+          <a class="navbar-brand" href="#"><img src="./img/logoYoutube.png" alt=""></a>
+        </div>
+        <div class="col-1 collapse navbar-collapse"></div>
+        <div class="collapse navbar-collapse">
+          <div class="input-group mb-3 d-flex py-2">
+            <input type="text" class="form-control border-dark" placeholder="Tìm Kiếm" aria-label="Tìm Kiếm" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary border-dark" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div><button class="btn btn-light" type="button" id="button-addon2"><i class="fa-solid fa-microphone"></i></button></div>
+        </div>
+        <div class="col-2 collapse navbar-collapse"></div>
+        <div class="d-flex">
+          <div class="px-2"><button class="btn btn-light" type="button" id="button-addon2"><i class="fa-regular fa-square-plus fa-2x"></i></button></div>
+          <div class="px-2"><button class="btn btn-light" type="button" id="button-addon2"><i class="fa-solid fa-list-check fa-2x"></i></button></div>
+          <div class="px-2"><button class="btn btn-light" type="button" id="button-addon2"><i class="fa-solid fa-bell fa-2x"></i></button></div>
+          <div class="px-2 py-2"><i class="fa-solid fa-user-astronaut fa-2x"></i></div>
+        </div>
+      </div>
+      <div class="col-2 p-0">
+      </div>
+    </div>
+  </nav>
+  <div class="border-top">
+    <div class="highlight">
+      <pre class="chroma d-flex justify-content-xxl-center">
+        <div class="p-2"><button type="button" class="btn btn-dark rounded-pill">Tất&nbsp;cả</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Danh&nbsp;sách&nbsp;kết&nbsp;hợp</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Âm&nbsp;Nhạc</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Trực&nbsp;tiếp</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Bóng&nbsp;đá</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Đọc&nbsp;rap</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Hoạt&nbsp;Hình</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Mới&nbsp;tải&nbsp;lên&nbsp;gần&nbsp;đây</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Đã&nbsp;xem</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Đề&nbsp;xuất&nbsp;mới</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Âm&nbsp;Nhạc</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Trực&nbsp;tiếp</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Bóng&nbsp;đá</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Đọc&nbsp;rap</button></div>
+        <div class="p-2"><button type="button" class="btn btn-outline-secondary rounded-pill">Hoạt&nbsp;Hình</button></div>
+      </pre>
+    </div>
+  </div>
+  <div class="row container-fluid d-flex">
+    <div class="collapse show col-sm-auto col-md-2 col-lg-auto col-xl-auto col-xxl-auto" id="collapseExample">
+      <div class="d-none d-md-block d-lg-none">
+        <div class="list-group card card-body">
+          <button type="button" class="list-group-item list-group-item-action list-group-item-dark text-center" aria-current="true">
+            <div class=""><i style='font-size:24px' class='fas'>&#xf015;</i></div>
+            <div class=""><strong>Trang Chủ</strong></div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action text-center" style="border:none">
+            <div class=""><i style='font-size:24px' class='far'>&#xf14e;</i></div>
+            <div class="">Khám Phá</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action text-center" style="border:none">
+            <div class=""><i style='font-size:24px' class='fab'>&#xf368;</i></div>
+            <div class="">Shorts</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action text-center" style="border:none">
+            <div class=""><i style='font-size:24px' class='fas'>&#xf03c;</i></div>
+            <div class="d-flex">Kênh Đăng Ký</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action text-center" style="border:none">
+            <div class=""><i class="material-icons">&#xe04a;</i></div>
+            <div class="">Thư Viện</div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="collapse show col-sm-auto col-md-auto col-lg-3 col-xl-3 col-xxl-2" id="collapseExample">
+      <div class="d-none d-lg-block">
+        <div class="list-group card card-body">
+          <button type="button" class="list-group-item list-group-item-action list-group-item-dark d-flex" aria-current="true">
+            <div class=""><i style='font-size:24px' class='fas'>&#xf015;</i></div>
+            <div class="px-3"><strong>Trang Chủ</strong></div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i style='font-size:24px' class='far'>&#xf14e;</i></div>
+            <div class="px-3">Khám Phá</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i style='font-size:24px' class='fab'>&#xf368;</i></div>
+            <div class="px-3">Shorts</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i style='font-size:24px' class='fas'>&#xf03c;</i></div>
+            <div class="px-3">Kênh Đăng Ký</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex border-bottom" style="border:none">
+            <div class=""><i class="material-icons">&#xe04a;</i></div>
+            <div class="px-3">Thư Viện</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i style='font-size:24px' class='fas'>&#xf2f2;</i></div>
+            <div class="px-3">Video Đã Xem</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i style='font-size:24px' class='far'>&#xf144;</i></div>
+            <div class="px-3">Video Của Bạn
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex border-bottom" style="border:none">
+            <div class=""><i style='font-size:24px' class='fas'>&#xf107;</i></div>
+            <div class="px-3">Thêm</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i style='font-size:24px' class='far'>&#xf144;</i></div>
+            <div class="px-3">Xem Sau</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex border-bottom" style="border:none">
+            <div class=""><i style="font-size:24px" class="fa">&#xf087;</i></div>
+            <div class="px-3">Video Đã Thích</div>
+          </button>
+          <div class="p-2"><strong>KÊNH ĐĂNG KÝ</strong></div>
+          <button type="button" class="list-group-item list-group-item-action" style="border:none"><img src="./img/logo.png" alt=""> Tham Số</button>
+          <button type="button" class="list-group-item list-group-item-action" style="border:none"><img src="./img/logo.png" alt=""> Tham Số</button>
+          <button type="button" class="list-group-item list-group-item-action" style="border:none"><img src="./img/logo.png" alt=""> Tham Số</button>
+          <button type="button" class="list-group-item list-group-item-action" style="border:none"><img src="./img/logo.png" alt=""> Tham Số</button>
+          <button type="button" class="list-group-item list-group-item-action" style="border:none"><img src="./img/logo.png" alt=""> Tham Số</button>
+          <button type="button" class="list-group-item list-group-item-action" style="border:none"><img src="./img/logo.png" alt=""> Tham Số</button>
+          <button type="button" class="list-group-item list-group-item-action border-bottom" style="border:none"><img src="./img/logo.png" alt=""> Tham Số</button>
+          <div class="p-2"><strong>DỊCH VỤ KHÁC CỦA YOUTUBE</strong></div>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i style="font-size:24px" class="fa">&#xf11b;</i></div>
+            <div class="px-3">Trò Chơi</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i class="material-icons">&#xe639;</i></div>
+            <div class="px-3">Trực Tiếp</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i style='font-size:24px' class='fas'>&#xf5ab;</i></div>
+            <div class="px-3">Thể Thao</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i class="material-icons">&#xe8b8;</i></div>
+            <div class="px-3">Cài Đặt</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i style='font-size:24px' class='far'>&#xf024;</i></div>
+            <div class="px-3">Trợ Giúp</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i class="material-icons">&#xe8fd;</i></div>
+            <div class="px-3">Lịch Sử Báo Cáo</div>
+          </button>
+          <button type="button" class="list-group-item list-group-item-action d-flex" style="border:none">
+            <div class=""><i class="material-icons">&#xe87f;</i></div>
+            <div class="px-3">Gửi Phản Hồi</div>
+          </button>
+        </div>
+        <div class="p-2">
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Giới thiệu</a>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Báo trí</a>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Bản quyền</a><br>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Liên hệ với chúng tôi</a><br>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Người sáng tạo</a>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Quảng cáo</a><br>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Nhà phát triển</a><br><br>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Điều khoản</a>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Quyền riêng tư</a><br>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Chính sách và an toàn</a><br>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Cách YouTube hoạt động</a><br>
+          <a href="#" class="text-muted text-decoration-none fw-bold" style="font-size: small;">Thử các tính năng mới</a>
+        </div>
+        <button type="button" class="list-group-item list-group-item-action p-2" style="border:none" disabled>© 2022 Google LLC</button>
+      </div>  
+    </div>
+    <div class="col border-top">
+      <div class="p-3">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+            <div class="col">
+              <div class="card h-100">
+                <div class="">
+                  <img class="mw-100" src="https://i.ytimg.com/vi/ViV3zHdXHIQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3tcjtc-5Y1Ave7b6aeSOBp9XhVg"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=ViV3zHdXHIQ"><b>Nếu Lỡ Một Ngày- LyLy - Đấu La 3D Tuyệt Thế Đường Môn</b></a>
+                  <p class="card-text">LyLy Official</p>
+                  <p  class="card-text">36 N lượt xem . 2 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="">
+                  <img class="mw-100" src="https://i.ytimg.com/vi/nUUsUAPEjFc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBOZ6_QU_o4vZF-vldsbbe0NJwGnw"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=nUUsUAPEjFc"><b>Create Responsive Admin Dashboard using Html CSS &...</b></a>
+                  <p class="card-text">Online Tutorials</p>
+                  <p  class="card-text">25 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/ZINTEDr2Ptk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDEU879Wl0MF_yUdwX3ZJMC6LYHWw"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=ZINTEDr2Ptk"><b>Có Không giữ thì mất đừng tìm| cover| Nguyễn Hằng</b></a>
+                  <p class="card-text">Nguyễn Hằng</p>
+                  <p  class="card-text">15 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/n0DQJixLd_g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAENhY7gyijup-Bdf4Aj52bUlUSvg"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=n0DQJixLd_g"><b>NẤU ĂN HAI ĐÈN Ở NÚI CÚC. MỘT NGƯỜI ĐÀN ÔNG...</b></a>
+                  <p class="card-text">GEORGY KAVKAZ</p>
+                  <p  class="card-text">250 N lượt xem . 3 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/eDww2A1P8eM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnUnjgaJnwk7OnW4K0AHodemp3NA"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=eDww2A1P8eM"><b>Điều Anh Muốn Nói (𝙨𝙡𝙤𝙬𝙚𝙙 + 𝙧𝙚𝙫𝙚𝙧𝙗) - Reddy</b></a>
+                  <p class="card-text">Oririn cassh</p>
+                  <p  class="card-text">27 N lượt xem . 3 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/Lacy9EGbH_M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC2fQianE3SJNsxsIUhCgFnbafeQw"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=Lacy9EGbH_M"><b>Em Khác Gì Hoa? - Lil Zpoet x Quanvrox「Lofi Version...</b></a>
+                  <p class="card-text">Ytorials jguy</p>
+                  <p  class="card-text">15 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/TojJlQhXLrE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0tPcbTUoUWrgYBGjQBmYbpcSTcA"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=TojJlQhXLrE"><b>BLAST VẪN CHƯA TUNG HẾT SỨC?! | BLAST CÓ...</b></a>
+                  <p class="card-text">Online total</p>
+                  <p  class="card-text">255 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/quP6PUr4jGw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC1rcl1_s_AifG0d0-mgbFIkt3lTw"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="youtube.com/watch?v=quP6PUr4jGw"><b>Lil Nas X - Industry Baby [AMV - Jujutsu Kaisen]</b></a>
+                  <p class="card-text">Nltorials</p>
+                  <p  class="card-text">251 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/aeMezMk1Eg4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA5kQPY3Yjql5U8GDQlUdUXUVIanA"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=aeMezMk1Eg4"><b>Nhạc Lofi 2022 - Những Bản Nhạc Lofi Chill Nhẹ ...</b></a>
+                  <p class="card-text">Onl</p>
+                  <p  class="card-text">115 N lượt xem . 3 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/NgTPbnnyr6Q/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDsv3GsrhyAmzr2YKLGapxIBtQOOA"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=NgTPbnnyr6Q"><b>Part 3. Lacing and buckles. Шнуровка и пряжки...</b></a>
+                  <p class="card-text">Evgenia Petrova</p>
+                  <p  class="card-text">35 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/9ue1DivJxes/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCiyUOCrAG4gPMkTud5Whf_dQKazQ"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=9ue1DivJxes"><b>TÔI CHỈ MUỐN NÓI - PHAN MẠNH QUỲNH | MẮT...</b></a>
+                  <p class="card-text">Bê Huynh</p>
+                  <p  class="card-text">215 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/A28hMd9uaOg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCwg9j86wwFM5dohDjqVFL2irhhwg"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=A28hMd9uaOg"><b>One Kiss - Fan del Liverpool Cantando | One kiss is all it ...</b></a>
+                  <p class="card-text">S-Chill</p>
+                  <p  class="card-text">125 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/NwkohUt1Klc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDaDRG-aDuSBVe5nnak9-adxnS1Hg"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=NwkohUt1Klc"><b>Best Songs Of Coldplay Full Album 2022 | Coldplay...</b></a>
+                  <p class="card-text">PLAY MUSIC</p>
+                  <p  class="card-text">215 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/nIl_gX9W5qQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBKK8ByV-5qeEfnJndFS2nwmI6S3A"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=nIl_gX9W5qQ"><b>Vũ - Mùa Hè Của Em / OFFICIAL MV MOT NGAY VUI</b></a>
+                  <p class="card-text">Vũ Official</p>
+                  <p  class="card-text">915 N lượt xem . 2 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/SzR7OusKADk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBjZPo7_idqQpM1RKh4yoH_aCWsrw"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=SzR7OusKADk"><b>[Vietsub] Like That - Doja Cat (Lyrics) | Coldplay...</b></a>
+                  <p class="card-text">PLAY MUSIC</p>
+                  <p  class="card-text">21 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="" >
+                  <img class="mw-100" src="https://i.ytimg.com/vi/WAxxfzdcNdA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBKJbvTdGzGJIgX_Po03M9_uzu2Zw"/>
+                </div>
+                <div class="card-body">
+                  <a class="text-decoration-none text-black" href="https://www.youtube.com/watch?v=WAxxfzdcNdA"><b>em bỏ hút thuốc chưa - người yêu cũ nhắn tin hỏi...</b></a>
+                  <p class="card-text">PLAY MUSIC</p>
+                  <p  class="card-text">21 N lượt xem . 1 ngày trước</p>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+
+
+    <!--
+    <div class="bd-example">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"><button type="button" class="btn btn-dark rounded-pill">Tất&nbsp;cả</button> </th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Danh&nbsp;sách&nbsp;kết&nbsp;hợp</button> </th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Âm&nbsp;Nhạc</button> </th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Trực&nbsp;tiếp</button> </th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Bóng&nbsp;đá</button> </th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Đọc&nbsp;rap</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Hoạt&nbsp;Hình</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Mới&nbsp;tải&nbsp;lên&nbsp;gần&nbsp;đây</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Đã&nbsp;xem</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Đề&nbsp;xuất&nbsp;mới</button></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    
+    <button type="button" class="btn btn-dark rounded-pill">Tất&nbsp;cả</button> 
+    <button type="button" class="btn btn-outline-secondary rounded-pill">Danh&nbsp;sách&nbsp;kết&nbsp;hợp</button> 
+    <button type="button" class="btn btn-outline-secondary rounded-pill">Âm&nbsp;Nhạc</button> 
+    <button type="button" class="btn btn-outline-secondary rounded-pill">Trực&nbsp;tiếp</button> 
+    <button type="button" class="btn btn-outline-secondary rounded-pill">Bóng&nbsp;đá</button> 
+    <button type="button" class="btn btn-outline-secondary rounded-pill">Đọc&nbsp;rap</button> 
+    <button type="button" class="btn btn-outline-secondary rounded-pill">Hoạt&nbsp;Hình</button> 
+    <button type="button" class="btn btn-outline-secondary rounded-pill">Mới&nbsp;tải&nbsp;lên&nbsp;gần&nbsp;đây</button>
+    <button type="button" class="btn btn-outline-secondary rounded-pill">Đã&nbsp;xem</button>
+    <button type="button" class="btn btn-outline-secondary rounded-pill">Đề&nbsp;xuất&nbsp;mới</button>
+
+    <div class="bd-example">
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th scope="col"><button type="button" class="btn btn-dark rounded-pill">Tất&nbsp;cả</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Danh&nbsp;sách&nbsp;kết&nbsp;hợp</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Âm&nbsp;Nhạc</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Trực&nbsp;tiếp</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Bóng&nbsp;đá</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Đọc&nbsp;rap</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Hoạt&nbsp;Hình</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Mới&nbsp;tải&nbsp;lên&nbsp;gần&nbsp;đây</button></th>
+             <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Đã&nbsp;xem</button></th>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Đề&nbsp;xuất&nbsp;mới</button></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div class="bd-example">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <div class="bd-example">
+       <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th scope="col"><button type="button" class="btn btn-dark rounded-pill">Tất&nbsp;cả</button></th>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+      </div>
+      <div class="bd-example">
+        <div class="table-responsive">
+         <table class="table">
+           <tbody>
+             <tr>
+              <th scope="col"><button type="button" class="btn btn-outline-secondary rounded-pill">Danh&nbsp;sách&nbsp;kết&nbsp;hợp</button></th>
+             </tr>
+           </tbody>
+         </table>
+        </div>
+       </div>
+    </div>-->
+
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> 
+</body>
+</html>
